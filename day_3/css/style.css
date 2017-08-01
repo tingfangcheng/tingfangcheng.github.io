@@ -1,0 +1,20 @@
+body{
+background: rgba(100,225,225,0.5);
+}
+
+/*
+div{
+	background: red;
+	height: 50px;
+	width: 50%;
+}*/
+
+
+/*for class use a dot*/
+.div1{background: red;
+height: 400px;
+width: 100px;}
+
+/*for ID use a hashtad*/
+
+#div2{background: yellow;}
