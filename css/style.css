@@ -6,8 +6,9 @@ body{
 }
 
 
+
 nav h1{
-	display: inline-block;;
+	display: inline-block;
 	font-size: 40px;
 	color: blue;
 	margin-left:6%;
@@ -292,7 +293,7 @@ footer ul li a:hover{
 
 .paragraph{
 	text-align: left;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .boxhp{
