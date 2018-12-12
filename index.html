@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Phantom Atlas</title>
     <style type="text/css">
         html, body {
             margin: 0;
@@ -30,32 +30,6 @@
 
     function initRender() {
 
-        var info = document.createElement('div');
-        info.style.position = 'absolute';
-        info.style.top = '88%';
-        info.style.width = '100%';
-        info.style.textAlign = 'center';
-        info.style.fontSize = '16px';
-        info.style.color = '#002793'
-        info.style.fontFamily = 'Open Sans';
-        info.innerHTML =
-            '<p>The Phantom Atlas: The Greatest Myths, Lies and Blunders on Maps</p>';
-            '<p>based on a book of EdwardBrooke-Hitching</p>';
-        document.body.appendChild(info);
-
-         var info2 = document.createElement('div');
-        info2.style.position = 'absolute';
-        info2.style.top = '91.5%';
-        info2.style.width = '100%';
-        info2.style.textAlign = 'center';
-        info2.style.fontSize = '9px';
-        info2.style.color = '#002793'
-        info2.style.fontFamily = 'Open Sans';
-        info2.innerHTML =
-            '<p>based on a book of EdwardBrooke-Hitching</p>';
-        document.body.appendChild(info2);
-       
-
         var saveLink = document.createElement('div');
         saveLink.style.position = 'absolute';
         saveLink.style.top = '95%';
@@ -63,12 +37,12 @@
         saveLink.style.textAlign = 'center';
         saveLink.style.fontSize = '9px';
         saveLink.style.color = '#002793'
+        saveLink.style.active = '#002793'
         saveLink.style.fontFamily = 'Open Sans';
         saveLink.innerHTML =
             '<a href="#" id="saveLink">Save Frame</a>';
         document.body.appendChild(saveLink);
         document.getElementById("saveLink").addEventListener('click', saveAsImage);
-
         renderer = new THREE.WebGLRenderer({antialias: true, alpha:true, preserveDrawingBuffer:true});
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.shadowMap.enabled = true;
